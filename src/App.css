@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+*  {
+margin: 0;
+padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+    font-size:18px;
+    background-color:#f5f6f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    max-width:940px;
+    font-size:2.5em; /* Factor relativo al tamaño de la letra del contenedor 2.5 veces ese valor*/
+    font-family: Lato,sans-serif;
+    font-weight: 700;
+    line-height: 1.1; /* Altura de la linea separacion entre las lineas*/
+    margin: 40px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    min-height: 100vh; /* Se adapte a la altura del navegador , minimno va a tomar el 100% de la pantalla verticalmente view per height*/
+    display: flex;/* flexbox, herramienta edn css para definir como se van aubicar lso distintos elementos dentro del contenedor*/
+    flex-wrap: wrap; /* si un elmento toma todo el ancho del contenedor los otros elementos vana ubicarse debajo de el*/
+    align-items: center;
+    justify-content:center;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.contenedor-principal{
+    min-height: 600px; /* altrura minima de 600px el contendor se va a adaptar*/
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
